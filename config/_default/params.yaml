@@ -4,11 +4,11 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 # Appearance
-
-theme: my_theme
-day_night: true
-font: my_font
-font_size: XL
+appearance:
+  theme_day: my_theme
+  theme_night: my_theme
+  font: my_font
+  font_size: XL
 
 # SEO
 
