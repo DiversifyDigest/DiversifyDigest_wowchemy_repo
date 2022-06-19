@@ -1,4 +1,4 @@
 [submodule "public"]
 	path = public
-	url = git@github.com:DiversifyDigest/DiversifyDigest.github.io.git
+	url = https://github.com/DiversifyDigest/DiversifyDigest.github.io.git
 	branch = master
