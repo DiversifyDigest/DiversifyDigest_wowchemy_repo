@@ -4,153 +4,107 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 # Appearance
+
 appearance:
   theme_day: my_theme
   theme_night: my_theme
   font: my_font
   font_size: XL
-
+  
+  
 # SEO
 
-site_type: Project
-local_business_type: ''
-org_name: 'Alliance SciComm & Consulting, LLC'
-description: 'Weekly digest with all the latest research on diversity, equity, inclusion, and justice.'
-twitter: 'Diversify_Dig'
-
-# Contact (edit or remove options as required)
-
-email: admin@diversifydigest.com
-phone: []
-address:
-  street: 215 S. Main Street, 755
-  city: Linden
-  region: MI
-  postcode: ''
-  country: United States
-  country_code: US
-coordinates:
-  latitude: ''
-  longitude: ''
-directions: []
-office_hours: []
-appointment_url: []
-contact_links:
-  - icon: twitter
-    icon_pack: fab
-    name: DM Me
-    link: 'https://twitter.com/Diversify_Dig'
-#  - icon: skype
-#    icon_pack: fab
-#    name: Skype Me
-#    link: 'skype:echo123?call'
-#  - icon: keybase
-#    icon_pack: fab
-#    name: Chat on Keybase
-#    link: 'https://keybase.io/'
-#  - icon: comments
-#    icon_pack: fas
-#    name: Discuss on Forum
-#    link: 'https://discourse.gohugo.io'
+marketing:
+  seo:
+    site_type: Project
+    local_business_type: ''
+    org_name: 'Alliance SciComm & Consulting, LLC'
+    description: 'Biweekly digest with all the latest research on diversity, equity, inclusion, and justice.'
+    twitter: 'Diversify_Dig'
+  analytics:
+    google_analytics: ''
+    #google_tag_manager: 'GTM-MM2Z9B5'
+    baidu_tongji: ''
+  verification:
+    google: 'EsYCfLIxvuiYJlr8_ZabwABIxs2HdDaQNqIVjdom4UQ'
+    baidu: ''
 
 # Site header
 
-main_menu:
-  enable: true
-  align: l
-  show_logo: true
-  show_language: false
-  show_day_night: true
-  show_search: true
-  highlight_active_link: true
+header:
+  navbar:
+    enable: true
+    align: l
+    show_logo: true
+    show_language: false
+    show_day_night: true
+    show_search: true
+    highlight_active_link: true
+
+# Site footer
+
+footer:
+  copyright:
+    notice: '&copy; Alliance SciComm & Consulting, LLC {year} under {license}'
+    license:
+      enable: true
+      allow_derivatives: false
+      share_alike: true
+      allow_commercial: false
 
 # Localization
 
-date_format: 'Jan 2, 2006'
-time_format: '3:04 PM'
-address_format: en-us
+locale:
+  date_format: 'Jan 2, 2006'
+  time_format: '3:04 PM'
+  address_format: en-us
 
 # Site features
 
-highlight: true
-highlight_languages:
-  - r
-math: false
-diagram: false
-privacy_pack: false
-edit_page:
-  repo_url: ''
-  content_dir: ''
-  repo_branch: main
-  editable:
-    page: false
-    post: false
-    book: false
-show_related:
-  book: true
-  page: false
-  post: true
-  project: true
-  publication: true
-  event: true
-reading_time: true
-section_pager: false
-docs_section_pager: true
-sharing: true
-copyright_license:
-  enable: false
-  allow_derivatives: false
-  share_alike: true
-  allow_commercial: false
-  notice: 'This work is licensed under {license}'
-abstract_length: 135
-plugins_js: []
-avatar:
-  gravatar: false
-  shape: circle
-publications:
-  date_format: January 2006
-  citation_style: apa
-projects:
-  post_view: 2
-  publication_view: 2
-  talk_view: 2
-breadcrumb:
-  page_types:
-    book: true
-comments:
-  provider: ''
-  commentable:
-    post: true
-    book: true
-    project: true
-    publication: true
-    event: true
-  disqus:
-    shortname: ''
-    show_count: true
-  commento:
+features:
+  syntax_highlighter:
+    enable: true
+    extra_languages:
+      - r
+      - latex
+  math:
+    enable: false
+  privacy_pack:
+    enable: false
+  repository:
     url: ''
-search:
-  provider: wowchemy
-  algolia:
-    app_id: ''
+    content_dir: content
+    branch: master
+  avatar:
+    gravatar: false
+    shape: circle
+  comment:
+    provider: ''
+    disqus:
+      shortname: ''
+      show_count: true
+    commento:
+      url: ''
+  search:
+    provider: wowchemy
+    algolia:
+      app_id: ''
+      api_key: ''
+      index_name: ''
+      show_logo: false
+  map:
+    provider: ''
     api_key: ''
-    index_name: ''
-    show_logo: false
-map:
-  provider: ''
-  api_key: ''
-  zoom: 15
-marketing:
-  google_analytics: ''
-  google_tag_manager: 'GTM-MM2Z9B5'
-  google_site_verification: 'EsYCfLIxvuiYJlr8_ZabwABIxs2HdDaQNqIVjdom4UQ'
-  baidu_site_verification: ''
-  baidu_tongji: ''
-cms:
-  branch: master
-  local_backend: false
-icon:
-  pack:
-    ai: true
+    zoom: 15
+
+# Extensions
+
+extensions:
+  cms:
+    branch: master
+    local_backend: false
+  isotope:
+    # Enable if you use the Portfolio widget or Publication filter
+    enable: true
+  academicons:
+    enable: true

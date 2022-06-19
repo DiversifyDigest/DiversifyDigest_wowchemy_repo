@@ -1,6 +1,5 @@
 ---
 # An instance of the Contact widget.
-# Documentation: https://sourcethemes.com/academic/docs/page-builder/
 widget: contact
 
 # This file represents a page section.
@@ -15,7 +14,7 @@ subtitle:
 content:
   # Automatically link email and phone or display as text?
   autolink: true
-  
+
   # Email form provider
   form:
     provider: 
@@ -24,7 +23,19 @@ content:
     netlify:
       # Enable CAPTCHA challenge to reduce spam?
       captcha: false
-  
+
+  # Contact details (edit or remove options as required)
+  email: admin@diversifydigest.com
+  phone: 
+  directions: 
+  office_hours:
+  appointment_url: ''
+  contact_links:
+    - icon: twitter
+      icon_pack: fab
+      name: DM
+      link: 'https://twitter.com/Diversify_Dig'
+
 design:
   columns: '2'
 ---
